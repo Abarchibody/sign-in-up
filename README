@@ -13,12 +13,16 @@ docker build -t sign-in-up .
 ### -t: the target is the name of the image,
 ### we will refere it when run it the container
 
-
-
 ## Tag image
 
 ```bash
 docker pull abarchibody/sign-in-up sign-in-up
+```
+
+## Push image
+
+```bash
+docker push abarchibody/sign-in-up
 ```
 
 ## Run container
