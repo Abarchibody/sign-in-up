@@ -1,17 +1,33 @@
-#### Considering that we are in the current directory
+# Considering that we are in the current directory
 
-### Build image
+## Pull image
+
+```bash
+docker pull abarchibody/sign-in-up
+```
+
+## Build image
 ```bash
 docker build -t sign-in-up .
 ``` 
-# -t: the target is the name of the image,
-# we will refere it when run it the container
+### -t: the target is the name of the image,
+### we will refere it when run it the container
 
-### Run container
+
+
+## Tag image
+
+```bash
+docker pull abarchibody/sign-in-up sign-in-up
+```
+
+## Run container
 ```bash 
 docker run -p 80:80 sign-in-up
+# or
+docker run -p 80:80 abarchibody/sign-in-up
 ```
-# -d: detachable mode
-# -p: port mapping
-# --name: the name of the container
-# at last i specified the image name to run the container
+### -d: detachable mode
+### -p: port mapping
+### --name: the name of the container
+### at last i specified the image name to run the container
